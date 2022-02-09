@@ -16,4 +16,12 @@
   background: black;
   color: white;
 }
+
+.line {
+  height: 26px;
+  width: 2px;
+  margin-top: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  position: relative;
+}
 </style>
