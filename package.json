@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.17",
+    "aos": "^2.3.4",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
+    "globe.gl": "^2.24.3",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "vue": "^2.6.11",

@@ -7,7 +7,7 @@
 
     <ul class="flex gap-8">
       <li>Our Services</li>
-      <li>About Us</li>
+      <li><router-link to="/about">About Us</router-link></li>
       <li class="special">Book Now</li>
     </ul>
   </div>
