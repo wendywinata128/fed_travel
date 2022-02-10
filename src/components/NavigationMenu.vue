@@ -1,14 +1,9 @@
 <template>
-<<<<<<< HEAD
   <div
     class="nav-menu py-4 px-16 flex justify-between items-center w-full"
     :style="[mouseScroll ? { background: 'black', padding: '8px 32px' } : '']"
   >
     <h1 class="py-4 logo text-xl font-semi"><router-link to="/">DolanTravel.</router-link></h1>
-=======
-  <div class="nav-menu py-4 px-16 flex justify-between items-center w-full">
-    <h1 class="py-4 logo text-xl font-semi">DolanTravel.</h1>
->>>>>>> a790e217a82594cc2d338f507550b2304778d591
 
     <ul class="flex gap-8">
       <li>Our Services</li>
