@@ -1,11 +1,14 @@
 <template>
-  <button :style="cssProps">{{ title }}</button>
+  <button :style="cssProps" @click="onClicked">{{ title }}</button>
 </template>
 
 <script>
 export default {
   name: "custom-button",
-  props: ["title", "color"],
+  props: {
+    title: String,
+    color: String,
+  },
   computed: {
     cssProps() {
       return {
@@ -13,8 +16,12 @@ export default {
       };
     },
   },
-  mounted() {
+  methods: {
+    onClicked() {
+      this.$emit("onClickedButton");
+    },
   },
+  mounted() {},
 };
 </script>
 

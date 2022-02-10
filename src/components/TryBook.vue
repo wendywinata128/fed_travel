@@ -16,11 +16,12 @@ export default {
   bottom: 0;
   left: 50%;
   position: absolute;
-  background: white;
+  background: rgb(26, 26, 26);
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   border-radius: 8px;
   transform: translate(-50%, 50%);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
 }
 </style>

@@ -9,12 +9,25 @@
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 #app {
   height: 100%;
   width: 100%;
   background: black;
   color: white;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#app::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .line {

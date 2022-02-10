@@ -58,6 +58,7 @@ export default {
   width: 100%;
   height: 100vh;
   background: #161616;
+  position: relative;
 }
 
 .section1 .container-hero {
