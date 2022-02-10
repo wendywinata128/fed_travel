@@ -3,7 +3,7 @@
     class="nav-menu py-4 px-16 flex justify-between items-center w-full"
     :style="[mouseScroll ? { background: 'black', padding: '8px 32px' } : '']"
   >
-    <h1 class="py-4 logo text-xl font-semi">DolanTravel.</h1>
+    <h1 class="py-4 logo text-xl font-semi"><router-link to="/">DolanTravel.</router-link></h1>
 
     <ul class="flex gap-8">
       <li>Our Services</li>
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 export default {
   name: "navigation",
   data() {
