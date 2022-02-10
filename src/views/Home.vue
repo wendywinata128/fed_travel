@@ -1,17 +1,21 @@
 <template>
   <div>
     <section-1 />
+    <section-offer />
     <section-2 />
+    <section-entry-data />
   </div>
 </template>
 
 <script>
 import Section1 from "../components/home-section/Section1.vue";
-import Section2 from "../components/home-section/SectionRecomDest.vue";
+import Section2 from "../components/home-section/recomended-destination/SectionRecomDest.vue";
+import SectionEntryData from "../components/other-section/SectionEntryData.vue";
+import SectionOffer from "../components/home-section/what-we-offer/SectionOffer.vue";
 
 export default {
   name: "Home",
-  components: { Section2, Section1 },
+  components: { Section2, Section1, SectionEntryData, SectionOffer },
   data() {
     return {
       heroText: ["Holiday", "Memory", "Journey", "Trip"],

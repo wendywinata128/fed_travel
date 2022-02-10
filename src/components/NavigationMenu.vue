@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="nav-menu py-4 px-16 flex justify-between items-center w-full"
-    :style="[mouseScroll ? { background: 'black', padding: '8px 32px' } : '']"
-  >
+  <div class="nav-menu py-4 px-16 flex justify-between items-center w-full">
     <h1 class="py-4 logo text-xl font-semi">DolanTravel.</h1>
 
     <ul class="flex gap-8">
@@ -21,7 +18,6 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", () => {
-      console.log("masuk");
       this.mouseScroll = window.scrollY;
     });
   },
