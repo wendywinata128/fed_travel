@@ -1,17 +1,17 @@
 <template>
-  <div class="about">
-     <navigation-menu/>
-      <div id="globeViz"></div>
-      <div class="back"></div>
-     <div class="hero py-16 px-16">
-      <h1 data-aos="fade-right" class="mb-2">
+  <div class="about">        
+     <div data-aos="fade-left" id="globeViz"></div>
+     <div class="back"></div>
+     <div class="hero py-20" >
+      <h1 data-aos="fade-right" class="mb-2 pr-10">
        Latar Belakang
-      </h1>
-      <p data-aos="zoom-in" >
+      </h1>             
+     <p data-aos="zoom-in" class="pl-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, eligendi ab tempore in officiis rem minima incidunt quod illum ipsam corporis repudiandae optio expedita nostrum nam molestias dignissimos impedit? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officia sint necessitatibus nisi praesentium iure harum est? Sequi fugiat ducimus porro possimus! Possimus perspiciatis totam, reiciendis eius sint perferendis recusandae!     
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, corporis. Illo veritatis repellendus qui, expedita culpa nam. Officiis labore, at perferendis quasi quod harum quisquam minus quas distinctio? Voluptatem, aliquid. </p>
     </div>
   </div>
+ 
 </template>
 
 <style scoped>
@@ -56,6 +56,15 @@
   width:700px;
 }
 
+.judul h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 8px;
+  width: 100%;
+  display: flex;
+}
+
 .hero h1 {
   font-size: 42px;
   font-weight: bold;
@@ -67,11 +76,9 @@
 </style>
 
 <script>
-import NavigationMenu from "../NavigationMenu.vue";
 import Globe from 'globe.gl';
 export default {
-  name: "about-section",  
-  components: { NavigationMenu },
+  name: "about-section",   
   data() {
      return {
      }
