@@ -13,9 +13,9 @@
         </div>
       </div>
       <div class="price flex gap-4 items-center">
-        <title-value title="Duration" :value="destination.duration" />
+        <title-value title="Durasi" :value="destination.duration" />
         <div class="line"></div>
-        <title-value title="From" :value="destination.price" />
+        <title-value title="Mulai dari" :value="destination.price" />
       </div>
     </div>
   </div>

@@ -4,17 +4,13 @@
     <div class="back"></div>
     <div class="hero py-20">
       <h1 data-aos="fade-right" class="mb-2 pl-10">Latar Belakang</h1>
-      <p data-aos="zoom-in" class="pl-10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        eligendi ab tempore in officiis rem minima incidunt quod illum ipsam
-        corporis repudiandae optio expedita nostrum nam molestias dignissimos
-        impedit? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Pariatur officia sint necessitatibus nisi praesentium iure harum est?
-        Sequi fugiat ducimus porro possimus! Possimus perspiciatis totam,
-        reiciendis eius sint perferendis recusandae! Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Neque, corporis. Illo veritatis
-        repellendus qui, expedita culpa nam. Officiis labore, at perferendis
-        quasi quod harum quisquam minus quas distinctio? Voluptatem, aliquid.
+      <p data-aos="zoom-in" class="pl-10 text-justify">
+        Selama pandemi berlangsung, salah satu sektor yang paling terdampak
+        adalah sektor pariwisata. Kami mencoba menghidupkan kembali sektor
+        pariwisata, dengan membantu masyarakat menemukan tempat liburan yang
+        cocok bagi mereka. Tidak hanya itu, Kami juga mencoba memberi rasa aman
+        di kala pandemi dengan menyiapkan proteksi selama perjalanan
+        berlangsung.
       </p>
     </div>
   </div>

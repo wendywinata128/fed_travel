@@ -4,11 +4,8 @@
     <div class="container">
       <h1 data-aos="fade-right">Kami Memberikan<br />Kenangan Terbaik</h1>
       <p data-aos="fade-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, faucibus ac
-        phasellus ante a dolor mauris tortor. Urna a sed velit eu diam mi,
-        blandit vitae sed. Id mi placerat massa massa dignissim aliquam.
-        Faucibus sed et risus in orci, dolor parturient. Tempor porttitor massa
-        elit vestibulum nisl tellus.
+        Kemana pun kamu mau pergi, percayakan rencana tersebut kepada kami,
+        karena kami adalah orang yang tepat untuk menemani perjalananmu.
       </p>
 
       <div class="our-value" v-if="isShowed">
@@ -35,24 +32,24 @@ export default {
     return {
       companyValueData: [
         {
-          title: "Trips",
+          title: "Perjalanan",
           value: 8532,
-          description: "Total trip yang telah kami jalani",
+          description: "Total perjalanan yang telah kami jalani",
         },
         {
-          title: "Advice Trip",
-          value: 7782,
-          description: "Kerja sama dengan advice trip",
+          title: "Pengalaman memandu",
+          value: 4782,
+          description: "Total pengalaman memandu yang kami miliki",
         },
         {
-          title: "Trips",
-          value: 8532,
-          description: "Total trip yang telah kami jalani",
+          title: "Kerjasama",
+          value: 90,
+          description: "Total kerja sama dengan perusahaan traveling",
         },
         {
-          title: "Advice Trip",
-          value: 7782,
-          description: "Kerja sama dengan advice trip",
+          title: "Destinasi",
+          value: 1223,
+          description: "Total destinasi terbaik yang kami tawarkan",
         },
       ],
       isShowed: false,

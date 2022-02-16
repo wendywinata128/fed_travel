@@ -5,10 +5,9 @@
       <div class="hero py-16 px-16">
         <h1>Dolan Travel</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
-          laudantium quas nobis, iste debitis incidunt explicabo iusto placeat
-          neque pariatur obcaecati et distinctio officia ab corrupti recusandae,
-          nisi perspiciatis suscipit?
+          Dolan Travel merupakan perusahaan asal Yogyakarta, yang memulai
+          bisnisnya pada tahun 2022, dengan berfokus untuk membantu masyarakat
+          menemukan perjalanan liburan terbaik.
         </p>
       </div>
     </div>
@@ -18,7 +17,7 @@
 <style scoped>
 .nama-aplikasi {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: #161616;
   position: relative;
 }
@@ -26,7 +25,7 @@
 .nama-aplikasi .container-hero {
   background-image: url("../../assets/bg-home-section1.png");
   position: relative;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -43,10 +42,12 @@
 
 .nama-aplikasi .hero {
   position: relative;
+  height: 100%;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .hero h1 {
-  font-size: 200px;
+  font-size: 140px;
   font-weight: bold;
   color: white;
   word-spacing: 8px;

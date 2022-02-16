@@ -9,8 +9,8 @@
           </div>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium
-          mi eget luctus. Elementum consequat diam magnis posuere convallis.
+          Kami menyediakan perjalanan ke tempat yang indah, beserta pengalaman
+          yang mengesankan menjelajah tempat liburan di dunia.
         </p>
       </div>
       <try-book />
