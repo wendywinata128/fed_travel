@@ -1,12 +1,17 @@
 <template>
-  <div class="nama-aplikasi">     
-      <div class="container-hero">     
-        <navigation-menu/>
-        <div class="hero py-16 px-16">        
-            <h1>Dolan Travel</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae laudantium quas nobis, iste debitis incidunt explicabo iusto placeat neque pariatur obcaecati et distinctio officia ab corrupti recusandae, nisi perspiciatis suscipit?</p>
-        </div>
+  <div class="nama-aplikasi">
+    <div class="container-hero">
+      <navigation-menu />
+      <div class="hero py-16 px-16">
+        <h1>Dolan Travel</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+          laudantium quas nobis, iste debitis incidunt explicabo iusto placeat
+          neque pariatur obcaecati et distinctio officia ab corrupti recusandae,
+          nisi perspiciatis suscipit?
+        </p>
       </div>
+    </div>
   </div>
 </template>
 
@@ -24,6 +29,7 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
+  background-size: cover;
 }
 
 .nama-aplikasi .container-hero::before {
@@ -55,15 +61,19 @@
   font-weight: bold;
   color: white;
   word-spacing: 8px;
-   animation-name:glow;
-  animation-duration:1s;
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
+  animation-name: glow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-@keyframes glow{
-  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #161616;}
-  to{text-shadow:0px 0px 15px #fff,0px 0px 15px #161616;}
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 5px #fff, 0px 0px 5px #161616;
+  }
+  to {
+    text-shadow: 0px 0px 15px #fff, 0px 0px 15px #161616;
+  }
 }
 
 .hero h1 div {
@@ -95,12 +105,10 @@
 import NavigationMenu from "../NavigationMenu.vue";
 export default {
   name: "nama-aplikasi",
-  components: {NavigationMenu},
+  components: { NavigationMenu },
   data() {
-     return {
-     }
+    return {};
   },
-  methods: {
-  }
+  methods: {},
 };
 </script>
