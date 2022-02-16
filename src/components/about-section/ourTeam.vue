@@ -14,15 +14,13 @@
                 <img class="image" src="../../assets/team-one.jpg" />
                 <div class="overlay">
                     <p class="text">William</p>             
-                </div>
-                 
+                </div>                 
             </div>
             <div class="card-profile wrap" data-aos="zoom-in">
                 <img class="image" src="../../assets/team-three.jpg" />
                 <div class="overlay">
                     <p class="text">Orza</p>             
-                </div>
-                 
+                </div>                 
             </div>
             <div class="card-profile wrap" data-aos="zoom-in">
                 <img class="image" src="../../assets/team-two.jpg" />
@@ -65,8 +63,7 @@
   right: 0;
   background: #161616;
   visibility: hidden;
-  opacity: 0%;
-  transition: 0.5s;
+  opacity: 0%; 
 }
 
 .wrap:hover .overlay {
