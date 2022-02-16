@@ -1,5 +1,7 @@
 <template>
-  <div class="services-page"></div>
+  <div class="services-page">
+    <section1/>
+  </div>
 </template>
 
 <style scoped>
@@ -9,8 +11,15 @@
 }
 </style>
 
+
 <script>
+import Section1 from "../components/services-section/bookNow.vue";
 export default {
   name: "services-page",
+  components: { Section1},
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
