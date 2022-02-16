@@ -34,42 +34,7 @@
         </div>
       </div>
       <div class="container-section">
-        <div class="highlight-destination">
-          <div class="video" :class="[isDestinationHide ? '' : 'hide']">
-            <iframe
-              height="140"
-              src="https://www.youtube.com/embed/gsnqXt7d1mU"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="video" :class="[isDestinationHide ? '' : 'hide']">
-            <iframe
-              height="140"
-              src="https://www.youtube.com/embed/gsnqXt7d1mU"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="video" :class="[isDestinationHide ? '' : 'hide']">
-            <iframe
-              height="140"
-              src="https://www.youtube.com/embed/gsnqXt7d1mU"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="video" :class="[isDestinationHide ? '' : 'hide']">
-            <iframe
-              height="140"
-              src="https://www.youtube.com/embed/gsnqXt7d1mU"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <div
-          class="container-destination"
-          :class="[isDestinationHide ? 'hide' : '']"
-        >
+        <div class="container-destination">
           <destination-item
             v-for="destination in destinations"
             :key="destination.id"
@@ -83,17 +48,14 @@
             @click="() => scrollDestination('left')"
             data-aos="fade-up"
           >
-            &lt;
+            <i class="fas fa-chevron-left"></i>
           </div>
           <div
             class="action circle"
             @click="() => scrollDestination('right')"
             data-aos="fade-up"
           >
-            &gt;
-          </div>
-          <div class="action circle ml-auto" @click="toggleDestination">
-            {{ isDestinationHide ? "&lt;&lt;" : "&gt;&gt;" }}
+            <i class="fas fa-chevron-right"></i>
           </div>
         </div>
       </div>
@@ -289,6 +251,10 @@ export default {
 
 .hero .container-destination.hide {
   transform: translateX(100%);
+}
+
+.hero .container-destination.hide .action {
+  transform: rotate(90deg);
 }
 
 .hero .container-section .actions {

@@ -1,7 +1,6 @@
 <template>
   <div class="section1">
     <div class="container-hero">
-      <navigation-menu> </navigation-menu>
       <div class="hero py-16 px-16">
         <h1 class="mb-2">
           Plan Your Dream
@@ -23,11 +22,10 @@
 </template>
 
 <script>
-import NavigationMenu from "../NavigationMenu.vue";
 import TryBook from "../TryBook.vue";
 export default {
   name: "Section1",
-  components: { NavigationMenu, TryBook },
+  components: { TryBook },
   data() {
     return {
       heroText: ["Holiday", "Memory", "Journey", "Trip"],

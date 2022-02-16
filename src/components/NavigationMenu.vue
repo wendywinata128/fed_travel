@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 .nav-menu {
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 5;
   transition: 1s ease;
