@@ -12,8 +12,8 @@
 
 
 <script>
-import Section1 from "../components/about-section/aboutSection.vue";
-import Section2 from "../components/about-section/aboutSection2.vue";
+import Section1 from "../components/about-section/latarBelakang.vue";
+import Section2 from "../components/about-section/ourTeam.vue";
 import NamaAplikasi from "../components/about-section/namaAplikasi.vue";
 export default {
   name: "About",
