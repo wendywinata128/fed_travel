@@ -7,16 +7,7 @@
           <h1 class="left">Our&nbsp;</h1>
           <h1 class="right">Team</h1>
         </div>
-      </div>
-      <div class="ourteam pb-10">
-        <div class="container">
-          <div class="card-profile wrap" data-aos="zoom-in">
-            <img class="image" src="../../assets/team-one.jpg" />
-            <div class="overlay">
-              <p class="text">William</p>
-            </div>
-          </div>
-        </div>     
+      </div>    
         <div class="ourteam pb-10">     
           <div class="container">
             <div class="card-profile wrap" data-aos="zoom-in">
@@ -31,11 +22,16 @@
                     <p class="text">Orza</p>             
                 </div>                 
             </div>
+             <div class="card-profile wrap" data-aos="zoom-in">
+                <img class="image" src="../../assets/team-two.jpg" />
+                <div class="overlay">
+                    <p class="text">Wendy</p>             
+                </div>                 
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div>  
 </template>
 
 <style scoped>
