@@ -7,7 +7,7 @@
       <h1>Santai, Tinggal Pergi</h1>
       <p>
         Dengan menggunakan Dolan Travel, Anda bisa traveling tanpa pusing
-        memikirkan segala karna kami telah menyiapkan segalanya untuk Anda
+        memikirkan apapun, karna kami telah menyiapkan segalanya untuk Anda
       </p>
       <div class="container-offer">
         <div
@@ -37,17 +37,17 @@ export default {
         {
           title: "Travel Plans",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+            "Kami akan menyediakan rencana perjalanan Anda, serta memberikan waktu bebas untuk menikmati wisata di tempat liburan.",
         },
         {
           title: "Akomodasi",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+            "Kami menyediakan rencana perjalanan anda secara lengkap, mulai dari tiket pesawat, tiket wisata, hingga tempat penginapan selama perjalanan",
         },
         {
-          title: "Covid A",
+          title: "Proteksi Perjalanan",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+            "Tidak hanya memberikan kenyamanan selama liburan, kami juga memberikan proteksi dalam bentuk asuransi hingga protokol ketat terhadap pandemi. ",
         },
       ],
     };

@@ -15,18 +15,18 @@
     <div class="hero">
       <div class="detail">
         <div v-if="!isChangingText">
-          <div data-aos="fade-right">Recomended Destination</div>
+          <div data-aos="fade-right">Rekomendasi Destinasi</div>
           <h1 data-aos="fade-right" data-aos-delay="200">
             {{ destinationChanging.name }}
           </h1>
           <p data-aos="fade-right" data-aos-delay="400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
-            amet ac iaculis sit vestibulum interdum vel euismod. Condimentum
-            lacus, suspendisse eu eget.
+            Nikmati keindahan alam {{ destinationChanging.name }} yang tidak
+            akan pernah anda lupakan seumur hidup, selalu teringat dibenak anda,
+            dan selalu layak untuk menjadi cerita anda.
           </p>
           <custom-button
             class="mt-4"
-            title="View More"
+            title="Lihat Lebih Banyak"
             color="#FF5A5F"
             data-aos="fade-right"
             data-aos-delay="600"
