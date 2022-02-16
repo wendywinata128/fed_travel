@@ -27,7 +27,7 @@
           <custom-button
             class="mt-4"
             title="View More"
-            color="rgb(110, 30, 240)"
+            color="#FF5A5F"
             data-aos="fade-right"
             data-aos-delay="600"
           />
@@ -209,10 +209,10 @@ export default {
 
       destinationEl[idx].addEventListener("mousemove", (e) => {
         circle.style.top = `${
-          e.clientY - destinationEl[idx].getBoundingClientRect().top - 18
+          e.clientY - destinationEl[idx].getBoundingClientRect().top - 32
         }px`;
         circle.style.left = `${
-          e.clientX - destinationEl[idx].getBoundingClientRect().left - 18
+          e.clientX - destinationEl[idx].getBoundingClientRect().left - 32
         }px`;
       });
     });

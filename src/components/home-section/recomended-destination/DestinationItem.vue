@@ -8,7 +8,9 @@
     <div class="detail-destination w-full">
       <div class="flex justify-between items-center">
         <h4 class="text-xl font-bold">{{ destination.name }}</h4>
-        <div class="circle-play" @click="setItemClicked"></div>
+        <div class="circle-play" @click="setItemClicked">
+          <i class="fas fa-play"></i>
+        </div>
       </div>
       <div class="price flex gap-4 items-center">
         <title-value title="Duration" :value="destination.duration" />
@@ -76,18 +78,32 @@ export default {
 }
 
 .circle-play {
-  width: 36px;
-  height: 36px;
-  border-radius: 18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
   border: 1px solid white;
   opacity: 0%;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-play .fa-play {
+  transform: scale(0);
+  transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.6s;
+  font-size: 32px;
 }
 
 .circle-play.moving {
   position: absolute;
-  animation: circleOpenAnimation 1s linear forwards;
+  animation: circleOpenAnimation 0.6s linear forwards;
   cursor: pointer;
+}
+
+.circle-play.moving .fa-play {
+  transform: scale(1) translateX(2px);
 }
 
 @keyframes circleOpenAnimation {

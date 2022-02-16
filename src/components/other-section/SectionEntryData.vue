@@ -1,10 +1,24 @@
 <template>
   <div class="data-entry flex items-center pl-4" :style="cssProps">
-    <custom-button
-      title="Pindah"
-      color="rgba(255, 0, 0, 1)"
-      @onClickedButton="changeSection"
-    />
+    <div class="detail">
+      <div class="header" data-aos="fade-right">
+        <h1 class="font-bold text-xl title">
+          {{ contents[absNumber(section)].title }}
+        </h1>
+        <div class="number">{{ "0" + (absNumber(section) + 1) }}</div>
+      </div>
+      <div class="flex" data-aos="fade-up">
+        <div class="actions flex flex-col mr-12 gap-2">
+          <div class="icon" @click="changeSection('decrement')">
+            <i class="fas fa-long-arrow-alt-up text-2xl"></i>
+          </div>
+          <div class="icon" @click="() => changeSection('increment')">
+            <i class="fas fa-long-arrow-alt-down text-2xl"></i>
+          </div>
+        </div>
+        <p class="">{{ contents[absNumber(section)].description }}</p>
+      </div>
+    </div>
     <div class="container-data">
       <div
         class="container-content"
@@ -13,7 +27,7 @@
         :key="idx"
       >
         <div class="content">
-          {{ content }}
+          {{ idx + 1 }}
         </div>
       </div>
     </div>
@@ -21,13 +35,33 @@
 </template>
 
 <script>
-import CustomButton from "../CustomButton.vue";
 export default {
-  components: { CustomButton },
+  components: {},
   name: "entry-data",
   data() {
     return {
-      contents: [1, 2, 3, 4],
+      contents: [
+        {
+          title: "Travel Plans",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
+        {
+          title: "Travel Plans2",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
+        {
+          title: "Travel Plans3",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
+        {
+          title: "Travel Plans4",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
+      ],
       section: 0,
     };
   },
@@ -39,10 +73,22 @@ export default {
     },
   },
   methods: {
-    changeSection() {
-      console.log("masuk");
-      this.section++;
+    changeSection(type) {
+      if (type === "increment") {
+        this.section++;
+        if (this.section == 4) this.section = 0;
+      } else {
+        this.section--;
+        if (this.section == -1) this.section = 3;
+      }
+      console.log("test", type, this.section);
     },
+    absNumber(number) {
+      return Math.abs(number);
+    },
+  },
+  mounted() {
+    // this.changeSection();
   },
 };
 </script>
@@ -51,14 +97,20 @@ export default {
 .data-entry {
   height: 100vh;
   overflow: hidden;
+  display: flex;
+}
+
+.detail {
+  padding: 0 0 0 32px;
 }
 
 .container-data {
+  flex-shrink: 0;
   height: 150vh;
   width: 150vh;
   border: 1px solid white;
   border-radius: 50%;
-  margin-left: auto;
+  /* margin-left: auto; */
   transform: translate(50%, 0vh) rotate(var(--rotate-items));
   display: flex;
   align-items: center;
@@ -75,8 +127,8 @@ export default {
 }
 
 .content {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background: white;
   transform: translate(-50%, calc(-50% - 1px));
   border-radius: 50%;
@@ -85,5 +137,37 @@ export default {
   align-items: center;
   color: black;
   font-size: 32px;
+}
+
+.detail p {
+  width: 500px;
+}
+
+.detail .header {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
+
+.detail .number {
+  position: absolute;
+  font-size: 64px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  bottom: -8px;
+  left: 8px;
+}
+
+.detail .title {
+  font-size: 32px;
+}
+
+.actions > * {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.actions > *:hover {
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 </style>

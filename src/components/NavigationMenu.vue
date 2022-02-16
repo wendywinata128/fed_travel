@@ -3,7 +3,9 @@
     class="nav-menu py-4 px-16 flex justify-between items-center w-full"
     :style="[mouseScroll ? { background: 'black', padding: '8px 32px' } : '']"
   >
-    <h1 class="py-4 logo text-xl font-semi"><router-link to="/">DolanTravel.</router-link></h1>
+    <h1 class="py-4 logo text-xl font-semi">
+      <router-link to="/">DolanTravel.</router-link>
+    </h1>
 
     <ul class="flex gap-8">
       <li>Our Services</li>
@@ -14,7 +16,6 @@
 </template>
 
 <script>
-
 export default {
   name: "navigation",
   data() {
@@ -43,9 +44,9 @@ li {
 }
 
 li.special {
-  background: rgb(110, 30, 240);
+  background: #ff5a5f;
   border-radius: 20px;
-  box-shadow: 0px 0px 4px rgb(110, 30, 240);
+  box-shadow: 0px 0px 4px #ff5a5f;
 }
 
 li.special:hover {
@@ -55,11 +56,11 @@ li.special:hover {
 
 @keyframes hoverAnim {
   0% {
-    box-shadow: 0px 0px 4px rgb(110, 30, 240);
+    box-shadow: 0px 0px 4px #ff5a5f;
   }
 
   25% {
-    box-shadow: 0px 0px 16px rgb(110, 30, 240);
+    box-shadow: 0px 0px 16px #ff5a5f;
   }
 
   50% {
