@@ -55,6 +55,15 @@
   font-weight: bold;
   color: white;
   word-spacing: 8px;
+   animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #161616;}
+  to{text-shadow:0px 0px 15px #fff,0px 0px 15px #161616;}
 }
 
 .hero h1 div {

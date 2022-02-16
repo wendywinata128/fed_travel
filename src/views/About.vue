@@ -3,6 +3,7 @@
      <nama-aplikasi/>
      <section1/>
      <section2/>
+     <Footer />
   </div>
 </template>
 
@@ -12,12 +13,13 @@
 
 
 <script>
-import Section1 from "../components/about-section/aboutSection.vue";
-import Section2 from "../components/about-section/aboutSection2.vue";
+import Section1 from "../components/about-section/latarBelakang.vue";
+import Section2 from "../components/about-section/ourTeam.vue";
 import NamaAplikasi from "../components/about-section/namaAplikasi.vue";
+import Footer from "../components/home-section/footer/Footer.vue";
 export default {
   name: "About",
-  components: {Section1,Section2,NamaAplikasi},
+  components: {Section1,Section2,NamaAplikasi,Footer},
   data() {
      return {
      }
