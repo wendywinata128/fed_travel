@@ -1,9 +1,12 @@
 <template>
   <div>
     <section-1 />
-    <section-offer />
-    <section-2 />
+    <section-about-company />
     <section-entry-data />
+    <section-2 />
+    <section-offer />
+    <section-testimonial />
+    <Footer />
   </div>
 </template>
 
@@ -11,11 +14,22 @@
 import Section1 from "../components/home-section/Section1.vue";
 import Section2 from "../components/home-section/recomended-destination/SectionRecomDest.vue";
 import SectionEntryData from "../components/other-section/SectionEntryData.vue";
+import SectionAboutCompany from "../components/home-section/about-company/SectionAboutCompany.vue";
 import SectionOffer from "../components/home-section/what-we-offer/SectionOffer.vue";
+import SectionTestimonial from "../components/home-section/testimonial/SectionTestimonial.vue";
+import Footer from "../components/home-section/footer/Footer.vue";
 
 export default {
   name: "Home",
-  components: { Section2, Section1, SectionEntryData, SectionOffer },
+  components: {
+    Section2,
+    Section1,
+    SectionEntryData,
+    SectionAboutCompany,
+    SectionOffer,
+    SectionTestimonial,
+    Footer,
+  },
   data() {
     return {
       heroText: ["Holiday", "Memory", "Journey", "Trip"],

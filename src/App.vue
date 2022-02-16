@@ -15,7 +15,7 @@
 #app {
   height: 100%;
   width: 100%;
-  background: black;
+  background: #161619;
   color: white;
   overflow-x: hidden;
   -ms-overflow-style: none;

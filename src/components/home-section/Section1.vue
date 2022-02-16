@@ -57,12 +57,13 @@ export default {
 .section1 {
   width: 100%;
   height: 100vh;
-  background: #161616;
+  background: #161619;
   position: relative;
 }
 
 .section1 .container-hero {
   background-image: url("../../assets/bg-home-section1.png");
+  background-size: cover;
   position: relative;
   height: 70%;
   display: flex;

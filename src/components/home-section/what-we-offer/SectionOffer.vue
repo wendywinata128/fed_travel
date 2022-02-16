@@ -1,29 +1,28 @@
 <template>
   <div class="section-offer">
-    <div class="title">
-      <h1>OUR<br /><b>OFFERS</b></h1>
-      <div class="actions flex mt-6 gap-4">
-        <div
-          class="action circle"
-          v-if="!isDestinationHide"
-          @click="() => scrollDestination('left')"
-          data-aos="fade-up"
-        >
-          &lt;
-        </div>
-        <div
-          class="action circle"
-          v-if="!isDestinationHide"
-          @click="() => scrollDestination('right')"
-          data-aos="fade-up"
-        >
-          &gt;
-        </div>
-      </div>
+    <div class="container-img">
+      <img src="@/assets/offer/person-paddle.jpg" alt="person with paddle" />
     </div>
-    <div class="container-offer">
-      <div class="offer" v-for="(offer, idx) in offers" :key="idx">
-        {{ offer.title }}
+    <div class="container-details">
+      <h1>Santai, Tinggal Pergi</h1>
+      <p>
+        Dengan menggunakan Dolan Travel, Anda bisa traveling tanpa pusing
+        memikirkan segala karna kami telah menyiapkan segalanya untuk Anda
+      </p>
+      <div class="container-offer">
+        <div
+          class="offer"
+          v-for="(offer, idx) in offers"
+          :key="idx"
+          @click="offerClicked"
+          :class="[idx == 0 ? 'selected' : '']"
+        >
+          <div class="header">
+            <h1>{{ offer.title }}</h1>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <p>{{ offer.description }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -35,12 +34,28 @@ export default {
   data() {
     return {
       offers: [
-        { title: "Travel Plans" },
-        { title: "Travel Plans" },
-        { title: "Travel Plans" },
-        { title: "Travel Plans" },
+        {
+          title: "Travel Plans",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
+        {
+          title: "Akomodasi",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
+        {
+          title: "Covid A",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu ut pretium mi eget luctus. Elementum consequat diam magnis posuere convallis. Magna nec massa semper fringilla mattis etiam purus. Auctor faucibus gravida vitae risus hac.",
+        },
       ],
     };
+  },
+  methods: {
+    offerClicked(e) {
+      e.target.classList.toggle("selected");
+    },
   },
 };
 </script>
@@ -51,30 +66,99 @@ export default {
   padding: 64px 64px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 120px;
+}
+
+.container-img {
+  position: relative;
+}
+
+.container-img::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: calc(50% - 200px);
+  margin: 0 auto;
+  border: 3px solid #febb02;
+  transform: translate(25px, -25px);
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.container-details {
+  width: 500px;
+}
+
+.container-details > h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.container-details > p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-bottom: 32px;
 }
 
 .container-offer {
   display: flex;
-  margin: 0 60px;
-  gap: 20px;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.container-offer .offer {
-  height: 400px;
-  width: 250px;
-  border: 1px solid white;
-  border-radius: 4px;
-  padding: 8px;
+.offer {
+  border-bottom: 1px solid white;
+  padding: 24px 16px;
+  transition: 0.4s linear;
+  border-left: 0px solid #febb02;
 }
 
-h1 {
-  font-size: 64px;
+.offer > * {
+  pointer-events: none;
+}
+
+.offer:hover,
+.offer.selected {
+  border-left: 5px solid #febb02;
+  cursor: pointer;
+  background: #4a4a4f;
+  border-radius: 2px;
+  border-bottom: 0px;
+}
+
+.offer .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: bold;
 }
 
-h1 b {
-  background: rgb(110, 30, 240);
-  padding: 0 8px;
-  border-radius: 2px;
+.offer .header h1 {
+  font-size: 18px;
+}
+
+.offer p {
+  height: 0;
+  overflow: hidden;
+  margin-top: 0px;
+  transition: 0.4s linear;
+}
+
+.offer.selected p {
+  height: 80px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
 }
 </style>
