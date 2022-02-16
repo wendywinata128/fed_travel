@@ -1,39 +1,36 @@
-<template>     
-     <div class="about-section">     
-      <div class="container-hero">     
-        <navigation-menu/>
-        <div class="center">
-          <div class="hero py-10 px-16">        
-              <h1 class="left">Our&nbsp;</h1>  
-              <h1 class="right">Team</h1>
-          </div>
-        </div>     
-        <div class="ourteam pb-10">     
-          <div class="container">
-            <div class="card-profile wrap" data-aos="zoom-in">
-                <img class="image" src="../../assets/team-one.jpg" />
-                <div class="overlay">
-                    <p class="text">William</p>             
-                </div>
-                 
-            </div>
-            <div class="card-profile wrap" data-aos="zoom-in">
-                <img class="image" src="../../assets/team-three.jpg" />
-                <div class="overlay">
-                    <p class="text">Orza</p>             
-                </div>
-                 
-            </div>
-            <div class="card-profile wrap" data-aos="zoom-in">
-                <img class="image" src="../../assets/team-two.jpg" />
-                <div class="overlay">
-                    <p class="text">Wendy</p>                     
-                </div>
-                 
-            </div>   
-          </div>    
-        </div> 
+<template>
+  <div class="about-section">
+    <div class="container-hero">
+      <navigation-menu />
+      <div class="center">
+        <div class="hero py-10 px-16">
+          <h1 class="left">Our&nbsp;</h1>
+          <h1 class="right">Team</h1>
+        </div>
       </div>
+      <div class="ourteam pb-10">
+        <div class="container">
+          <div class="card-profile wrap" data-aos="zoom-in">
+            <img class="image" src="../../assets/team-one.jpg" />
+            <div class="overlay">
+              <p class="text">William</p>
+            </div>
+          </div>
+          <div class="card-profile wrap" data-aos="zoom-in">
+            <img class="image" src="../../assets/team-three.jpg" />
+            <div class="overlay">
+              <p class="text">Orza</p>
+            </div>
+          </div>
+          <div class="card-profile wrap" data-aos="zoom-in">
+            <img class="image" src="../../assets/team-two.jpg" />
+            <div class="overlay">
+              <p class="text">Wendy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -74,7 +71,7 @@
   opacity: 60%;
 }
 
-.container{
+.container {
   display: flex;
   width: 100%;
   padding: 0% 2%;
@@ -82,32 +79,32 @@
   height: 80vh;
 }
 
-.card-profile img{
+.card-profile img {
   z-index: 0;
 }
 
-.card-profile span{
+.card-profile span {
   z-index: 1;
 }
 
-.card-profile{
+.card-profile {
   border-radius: 20px 20px;
   flex: 2;
   overflow: hidden;
   transition: 0.5;
   margin: 0 2%;
-  box-shadow: 0 1.25rem 1.875rem rgba(0,0,0,.2);
+  box-shadow: 0 1.25rem 1.875rem rgba(0, 0, 0, 0.2);
   line-height: 0;
 }
 
-.card-profile > img{
+.card-profile > img {
   width: 100%;
   height: 80vh;
   object-fit: cover;
   transition: 0.5s;
 }
 
-.card-profile > span{
+.card-profile > span {
   font-size: 3vh;
   display: block;
   text-align: center;
@@ -117,11 +114,11 @@
   font-weight: bold;
 }
 
-.card-profile:hover{
+.card-profile:hover {
   flex: 1 1 30%;
 }
 
-.card-profile:hover > img{
+.card-profile:hover > img {
   width: 100%;
   height: 100%;
   opacity: 50%;
@@ -136,10 +133,10 @@
   overflow: hidden;
 }
 
-.container-hero .center{
+.container-hero .center {
   position: relative;
   display: flex;
-  flex-direction:column ;  
+  flex-direction: column;
   align-items: center;
 }
 
@@ -149,7 +146,7 @@
   flex-direction: column;
 }
 
-.about-section .container-hero .hero .right{
+.about-section .container-hero .hero .right {
   color: #febb02;
 }
 
@@ -157,27 +154,25 @@
   position: relative;
   z-index: 2;
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   width: 800px;
 }
-.about-section .hero .left{
+.about-section .hero .left {
   align-items: left;
   text-align: left;
 }
 
-.about-section .container-hero .ourteam{
+.about-section .container-hero .ourteam {
   position: relative;
   display: flex;
-  flex-direction:column ;  
+  flex-direction: column;
   align-items: center;
 }
 
-.about-section .hero .right{
+.about-section .hero .right {
   align-items: right;
   text-align: right;
 }
-
-
 
 .about-section .hero p {
   color: rgba(255, 255, 255, 0.8);
@@ -219,13 +214,10 @@
 
 <script>
 export default {
-  name: "about-section2",  
+  name: "about-section2",
   data() {
-     return {
-     }
+    return {};
   },
-  methods: {
-   
-  }
+  methods: {},
 };
 </script>

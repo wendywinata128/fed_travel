@@ -8,7 +8,7 @@
     </h1>
 
     <ul class="flex gap-8">
-      <li>Our Services</li>
+      <li><router-link to="/services">Our Services</router-link></li>
       <li><router-link to="/about">About Us</router-link></li>
       <li class="special">Book Now</li>
     </ul>
