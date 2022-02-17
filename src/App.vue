@@ -2,13 +2,15 @@
   <div id="app">
     <navigation-menu />
     <router-view />
+    <footer-app />
   </div>
 </template>
 
 <script>
+import FooterApp from "./components/home-section/footer/FooterApp.vue";
 import NavigationMenu from "./components/NavigationMenu.vue";
 export default {
-  components: { NavigationMenu },
+  components: { NavigationMenu, FooterApp },
   name: "app",
 };
 </script>

@@ -2,60 +2,96 @@
   <div class="book-now">
     <div class="container-hero py-20">
       <navigation-menu />
-      <div class="hero py-20 px-16">
-        <div class="container-word mr-10" data-aos="fade-right"
-            data-aos-delay="600">     
-            <h3>Jalani Perjalanan Terbaik untuk Anda</h3>
-            <p class="mt-5">
-            Dengan Dolan Trip Anda dapat membuat rencana perjalanan Anda maupun memilih berbagai trip yang telah disiapkan yang akan membuat memori terindah dalam hidup anda
-            </p>   
-            <custom-button
+      <div class="hero py-20">
+        <div
+          class="container-word mr-10"
+          data-aos="fade-right"
+          data-aos-delay="600"
+        >
+          <h3>Jalani Perjalanan Terbaik untuk Anda</h3>
+          <p class="mt-5">
+            Dengan Dolan Trip Anda dapat membuat rencana perjalanan Anda maupun
+            memilih berbagai trip yang telah disiapkan yang akan membuat memori
+            terindah dalam hidup anda
+          </p>
+          <custom-button
             class="mt-8 buttonstyle"
-            title="Lihat"
-            color="#FF5A5F"/>       
+            title="Jelajahi Tempat Liburan"
+            color="#FF5A5F"
+          />
         </div>
-        <div class="container-form py-5 px-5"  data-aos="fade-left"  data-aos-delay="600">   
+        <div
+          class="container-form py-5 px-5"
+          data-aos="fade-left"
+          data-aos-delay="600"
+        >
           <form action="">
-              <label for=""> Destinasi <span>*</span></label>
-              <select name="Destinasi" placeholder="Destinasi">
-                <option disabled selected value> Pilih Destinasi </option>
-                <option value="Japan">Japan</option>
-                <option value="Swiss">Swiss</option>
-                <option value="Indonesia">Indonesia</option>              
-                <option value="Indonesia">Italy</option>   
-              </select>                         
-              <div class="form-position">
-                <div class="pr-1">
-                  <label for=""> Tanggal <span>*</span></label>
-                  <input type="date" id="destinasi" name="Tanggal" style="color: gray;" placeholder="Destinasi">       
-                </div>
+            <label for=""> Destinasi <span>*</span></label>
+            <select name="Destinasi" placeholder="Destinasi">
+              <option disabled selected value>Pilih Destinasi</option>
+              <option value="Japan">Japan</option>
+              <option value="Swiss">Swiss</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="Indonesia">Italy</option>
+            </select>
+            <div class="form-position">
+              <div class="pr-1">
+                <label for=""> Tanggal <span>*</span></label>
+                <input
+                  type="date"
+                  id="destinasi"
+                  name="Tanggal"
+                  style="color: gray"
+                  placeholder="Destinasi"
+                />
+              </div>
               <div class="pl-1">
                 <label for=""> Peserta <span>*</span></label>
-                <input type="number" id="destinasi" name="Jumlah" placeholder="Jumlah">       
-              </div>              
+                <input
+                  type="number"
+                  id="destinasi"
+                  name="Jumlah"
+                  placeholder="Jumlah"
+                />
               </div>
-              <label for=""> Jenis Trip <span>*</span></label>
-              <div class="grid-container mt-3 mb-3">
+            </div>
+            <label for=""> Jenis Trip <span>*</span></label>
+            <div class="grid-container mt-3 mb-3">
               <label class="container">
-                <input type="radio" checked="checked" name="radio">Tanpa Tour Guide
+                <input type="radio" checked="checked" name="radio" />Tanpa Tour
+                Guide
                 <span class="checkmark"></span>
               </label>
               <label class="container">
-                <input type="radio" name="radio">Dengan Tour Guide
+                <input type="radio" name="radio" />Dengan Tour Guide
                 <span class="checkmark"></span>
               </label>
-              </div>
-              <label for=""> Budget Perjalanan <span>*</span></label>
-              <div class="slidecontainer">
-                <input type="range" min="500000" max="100000000" value="1000000" class="slider" id="myRange" style="width : 100%;">
-                <input type="text" id="demo" name="Destinasi" placeholder="Destinasi">                  
-              </div>
-                <custom-button
-                style="width:100%"
-                class="mt-10"
-                title="Lihat Perjalanan Yang Direkomendasikan"
-                color="#FF5A5F"/>    
-          </form>  
+            </div>
+            <label for=""> Budget Perjalanan <span>*</span></label>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="500000"
+                max="100000000"
+                value="1000000"
+                class="slider"
+                id="myRange"
+                style="width: 100%"
+              />
+              <input
+                type="text"
+                id="demo"
+                name="Destinasi"
+                placeholder="Destinasi"
+              />
+            </div>
+            <custom-button
+              style="width: 100%"
+              class="mt-10"
+              title="Lihat Perjalanan Yang Direkomendasikan"
+              color="#FF5A5F"
+            />
+          </form>
         </div>
       </div>
     </div>
@@ -63,7 +99,6 @@
 </template>
 
 <style scoped>
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -84,7 +119,7 @@
 }
 
 .container input {
-  position: absolute;  
+  position: absolute;
   opacity: 0;
   cursor: pointer;
 }
@@ -104,11 +139,11 @@
 }
 
 .container input:checked ~ .checkmark {
-  background-color: #FF5A5F;
+  background-color: #ff5a5f;
 }
 
-.slidecontainer p{
-  color: #FF5A5F;
+.slidecontainer p {
+  color: #ff5a5f;
 }
 
 .checkmark:after {
@@ -122,17 +157,16 @@
 }
 
 .container .checkmark:after {
- 	top: 4.7px;
-	left: 4.7px;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background: white;
+  top: 4.7px;
+  left: 4.7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
 }
 
-
 input[type="range"]::-webkit-slider-thumb {
-  background-color: #FF5A5F;
+  background-color: #ff5a5f;
 }
 
 select {
@@ -148,8 +182,7 @@ select {
   outline: none;
 }
 
-
-input[type=text] {
+input[type="text"] {
   width: 100%;
   padding: 12px 20px;
   color: gray;
@@ -162,7 +195,7 @@ input[type=text] {
   outline: none;
 }
 
-input[type=number] {
+input[type="number"] {
   width: 100%;
   padding: 12px 20px;
   color: gray;
@@ -175,7 +208,7 @@ input[type=number] {
   outline: none;
 }
 
-input[type=date] {
+input[type="date"] {
   width: 100%;
   height: 55%;
   padding: 12px 20px;
@@ -189,26 +222,26 @@ input[type=date] {
   outline: none;
 }
 
-.container-form .form-position{
+.container-form .form-position {
   flex: 5;
   display: flex;
   flex-direction: row;
 }
 
-input[type=text]:focus {
-  border: 2px solid #FF5A5F;
+input[type="text"]:focus {
+  border: 2px solid #ff5a5f;
 }
 
-input[type=date]:focus {
-  border: 2px solid #FF5A5F;
+input[type="date"]:focus {
+  border: 2px solid #ff5a5f;
 }
 
-input[type=number]:focus {
-  border: 2px solid #FF5A5F;
+input[type="number"]:focus {
+  border: 2px solid #ff5a5f;
 }
 
-.buttonstyle{
-    width: 100px ;
+.buttonstyle {
+  width: fit-content;
 }
 .book-now {
   width: 100%;
@@ -217,7 +250,7 @@ input[type=number]:focus {
   position: relative;
 }
 
-.book-now .container-hero {  
+.book-now .container-hero {
   display: flex;
   flex-direction: row;
   background-size: cover;
@@ -248,7 +281,7 @@ input[type=number]:focus {
   align-items: left;
 }
 
-.book-now .hero .container-form{
+.book-now .hero .container-form {
   width: 100%;
   font-weight: bold;
   position: relative;
@@ -260,14 +293,13 @@ input[type=number]:focus {
   border-radius: 10px 10px;
 }
 
-.book-now .hero .container-form span{
-  color: #FF5A5F;
+.book-now .hero .container-form span {
+  color: #ff5a5f;
 }
 
-.book-now .hero .container-form label{
+.book-now .hero .container-form label {
   color: gray;
 }
-
 
 .hero .container-word h3 {
   font-size: 65px;
@@ -275,7 +307,6 @@ input[type=number]:focus {
   font-weight: bold;
   color: white;
 }
-
 
 .container-partner {
   height: 30%;
@@ -291,18 +322,20 @@ import NavigationMenu from "../NavigationMenu.vue";
 import CustomButton from "../CustomButton.vue";
 export default {
   name: "book-now",
-  components: { NavigationMenu,CustomButton},
+  components: { NavigationMenu, CustomButton },
   data() {
     return {};
   },
-  methods: {},mounted(){
+  methods: {},
+  mounted() {
     var slider = document.getElementById("myRange");
     var output = document.getElementById("demo");
-    var temp = slider.value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
-    output.value= "Rp. " + temp;
-    slider.oninput = function() {
-    output.value = "Rp. " + this.value.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
-}
-  }
+    var temp = slider.value.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+    output.value = "Rp. " + temp;
+    slider.oninput = function () {
+      output.value =
+        "Rp. " + this.value.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+    };
+  },
 };
 </script>

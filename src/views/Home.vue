@@ -5,7 +5,6 @@
     <section-2 />
     <section-offer />
     <section-testimonial />
-    <footer-app />
   </div>
 </template>
 
@@ -15,7 +14,6 @@ import Section2 from "../components/home-section/recomended-destination/SectionR
 import SectionAboutCompany from "../components/home-section/about-company/SectionAboutCompany.vue";
 import SectionOffer from "../components/home-section/what-we-offer/SectionOffer.vue";
 import SectionTestimonial from "../components/home-section/testimonial/SectionTestimonial.vue";
-import FooterApp from "../components/home-section/footer/FooterApp.vue";
 
 export default {
   name: "Home",
@@ -25,7 +23,6 @@ export default {
     SectionAboutCompany,
     SectionOffer,
     SectionTestimonial,
-    FooterApp,
   },
   data() {
     return {
