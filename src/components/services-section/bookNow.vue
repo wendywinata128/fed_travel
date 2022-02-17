@@ -3,7 +3,7 @@
     <div class="container-hero py-20">
       <navigation-menu />
       <div class="hero py-20 px-16">
-        <div class="container-word mr-10"   data-aos="fade-right"
+        <div class="container-word mr-10" data-aos="fade-right"
             data-aos-delay="600">     
             <h3>Jalani Perjalanan Terbaik untuk Anda</h3>
             <p class="mt-5">
@@ -14,7 +14,7 @@
             title="Lihat"
             color="#FF5A5F"/>       
         </div>
-        <div class="container-form py-5 px-5">   
+        <div class="container-form py-5 px-5"  data-aos="fade-left"  data-aos-delay="600">   
           <form action="">
               <label for=""> Destinasi <span>*</span></label>
               <select name="Destinasi" placeholder="Destinasi">
