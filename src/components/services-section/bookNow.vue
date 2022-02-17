@@ -48,8 +48,7 @@
               <label for=""> Budget Perjalanan <span>*</span></label>
               <div class="slidecontainer">
                 <input type="range" min="500000" max="100000000" value="1000000" class="slider" id="myRange" style="width : 100%;">
-                <input type="text" id="demo" name="Destinasi" placeholder="Destinasi">   
-               
+                <input type="text" id="demo" name="Destinasi" placeholder="Destinasi">                  
               </div>
                 <custom-button
                 style="width:100%"
@@ -57,8 +56,6 @@
                 title="Lihat Perjalanan Yang Direkomendasikan"
                 color="#FF5A5F"/>    
           </form>  
-         
-           
         </div>
       </div>
     </div>
