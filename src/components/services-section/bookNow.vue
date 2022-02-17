@@ -1,24 +1,52 @@
 <template>
   <div class="book-now">
-    <div class="container-hero">
+    <div class="container-hero py-20">
       <navigation-menu />
-      <div class="hero py-16 px-16">
-        <div class="container">
-            
+      <div class="hero py-20 px-16">
+        <div class="container-word mr-10"   data-aos="fade-right"
+            data-aos-delay="600">     
+            <h1>Jalani Perjalanan Terbaik untuk Anda</h1>
+            <p>
+            Dengan Dolan Trip Anda dapat membuat rencana perjalanan Anda maupun memilih berbagai trip yang telah disiapkan yang akan membuat memori terindah dalam hidup anda
+            </p>   
+            <custom-button
+            class="mt-10 buttonstyle"
+            title="Lihat"
+            color="#FF5A5F"/>       
         </div>
-        <h1>Dolan Travel</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
-          laudantium quas nobis, iste debitis incidunt explicabo iusto placeat
-          neque pariatur obcaecati et distinctio officia ab corrupti recusandae,
-          nisi perspiciatis suscipit?
-        </p>
+        <div class="container-form py-5 px-5">   
+          <form action="">
+              <h6>Destinasi <span>*</span></h6>
+               <div>
+              <label for="price" class="block text-sm font-medium text-gray-700">Price</label>
+              <div class="mt-1 relative rounded-md shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <span class="text-gray-500 sm:text-sm"> $ </span>
+                </div>
+                <input type="text" name="price" id="price" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md" placeholder="0.00">
+                <div class="absolute inset-y-0 right-0 flex items-center">
+                  <label for="currency" class="sr-only">Currency</label>
+                  <select id="currency" name="currency" class="focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-2 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md">
+                    <option>USD</option>
+                    <option>CAD</option>
+                    <option>EUR</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>  
+         
+           
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.buttonstyle{
+    width: 100px ;
+}
 .book-now {
   width: 100%;
   height: 100%;
@@ -28,7 +56,7 @@
 
 .book-now .container-hero {  
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-size: cover;
 }
 
@@ -40,62 +68,63 @@
   bottom: 0;
 }
 
-.book-now .hero {
+.book-now .hero .container-word {
   position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
 }
 
-.book-now .hero p {
+.book-now .hero .container-word p {
   color: rgba(255, 255, 255, 0.8);
   width: 600px;
-  text-align: center;
+  text-align: left;
+  align-items: left;
 }
 
-.hero h1 {
-  font-size: 200px;
+.book-now .hero .container-form{
+  width: 100%;
+  font-weight: bold;
+  color: gray;
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  border-radius: 10px 10px;
+}
+
+.book-now .hero .container-form span{
+  color: #FF5A5F;
+}
+
+
+
+.hero .container-word h1 {
+  font-size: 65px;
   font-weight: bold;
   color: white;
-  word-spacing: 8px;
-  animation-name: glow;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
-.hero h1 div {
-  overflow: hidden;
-  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-  width: fit-content;
-  margin: 0 auto;
-  position: relative;
-  color: rgb(250, 136, 28);
-  text-shadow: 0px 0px 8px rgba(250, 136, 28, 0.25);
-}
-
-.hero h1 div.hide {
-  opacity: 0%;
-  transform: translateY(-50%);
-}
 
 .container-partner {
   height: 30%;
   padding-top: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
   /* background: #000; */
 }
 </style>
 
 <script>
 import NavigationMenu from "../NavigationMenu.vue";
+import CustomButton from "../CustomButton.vue";
 export default {
   name: "book-now",
-  components: { NavigationMenu },
+  components: { NavigationMenu,CustomButton},
   data() {
     return {};
   },
